@@ -1,4 +1,4 @@
-radar_test@host-44-13:~> rsync -rvaz radar@<ip address>:/srv/borealis_data/ --exclude "*antennas_iq.hdf5.site" /home/radar_test/backup
+radar_test@host-44-13:~> rsync -vaz radar@<ip address>:/srv/borealis_data/ --exclude "*antennas_iq.hdf5.site" /home/radar_test/backup
 
 
 
