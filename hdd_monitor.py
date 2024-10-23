@@ -21,10 +21,10 @@ print("There is {:0.2f}%".format(percentage), "used")
 
 
 oldest_file = sorted([ "d:/test_folder/"+f for f in os.listdir("d:/test_folder/")], key=os.path.getctime, reverse=True)[0]
-#second_oldest_file = sorted([ "c:/users/cassi/PycharmProjects/file_space/venv/"+f for f in os.listdir("c:/users/cassi/PycharmProjects/file_space/venv/")], key=os.path.getctime)[1]
+second_oldest_file = sorted([ "d:/test_folder/"+f for f in os.listdir("d:/test_folder")], key=os.path.getctime, reverse=True)[1]
 
 print ("the oldest file in the selected directory is: ",oldest_file)
-#print ("the next oldest file in the selected directory is: ",second_oldest_file)
+print ("the next oldest file in the selected directory is: ",second_oldest_file)
 def FILE_REMOVE():
     #os.remove("test.txt")
     shutil.move(oldest_file, "C:/here/")
