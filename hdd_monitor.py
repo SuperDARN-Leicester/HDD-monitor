@@ -5,8 +5,8 @@
 import shutil
 import os
 import datetime
-f = open("test.txt", "a")
-f.close()
+#f = open("test.txt", "a") For test logging
+#f.close()                 For test logging
 tot, usd, fre=shutil.disk_usage("/")
 free = fre/1024**3  #
 total = tot/1024**3 # This formula converts the bytes to Gigabytes for easier reading.
