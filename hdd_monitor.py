@@ -27,7 +27,8 @@ print ("the oldest file in the selected directory is: ",oldest_file)
 print ("the next oldest file in the selected directory is: ",second_oldest_file)
 def FILE_REMOVE():
     #os.remove("test.txt")
-    shutil.move(oldest_file, "C:/here/")
+    shutil.move(oldest_file, "C:/Users/cassi/")
+    shutil.move(second_oldest_file, "C:/Users/cassi/")
 
 if percentage>=80:
     FILE_REMOVE()
