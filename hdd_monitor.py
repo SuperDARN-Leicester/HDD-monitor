@@ -30,13 +30,12 @@ def CALCULATE():
 
 try:
 	CALCULATE()
-	if percentage>=90:
+	if percentage>50:
 		print("delete delete delete")
 		shutil.rmtree(oldest_folder)
 		shutil.rmtree(second_oldest_folder)
 	else:
 		print("theres space left yet so no deletes")
 except:
-	print("not enough folders to delete")
-
+	print("finished")
 
